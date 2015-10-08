@@ -1,0 +1,11 @@
+<fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/searchfragment"
+        android:name="josedlujan.two.stage.streamer.spotify.app.com.spotifystreamer.Fragments.SearchFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="josedlujan.two.stage.streamer.spotify.app.com.spotifystreamer.Fragments.SearchFragment"
+        tools:layout="@android:layout/list_content"
+        />
+
