@@ -216,6 +216,7 @@ public class MediaPlayerFragment extends DialogFragment implements View.OnClickL
         }
 
         artistname.setText(artistName);
+
         changeUI();
         playMusic();
         return rootView;
@@ -304,7 +305,7 @@ public class MediaPlayerFragment extends DialogFragment implements View.OnClickL
 
         try{
             mediaPlayer.setDataSource( TopTrackFragment.topTrackSearch.getItem(position).preview_url);
-            mediaPlayer.prepare(); // might take long! (for buffering, etc)
+            mediaPlayer.prepareAsync(); // might take long! (for buffering, etc)
         }catch (Exception e) {
 
         }

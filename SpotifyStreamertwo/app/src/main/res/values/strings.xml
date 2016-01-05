@@ -5,7 +5,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_top_track">Top 10 Tracks</string>
     <string name="artist_search_network">Error with the network, try again.</string>
-    <string name="artist_search">No artist found, try with another.</string>
+    <string name="artist_search">Error with the network or no artist found, try with another.</string>
     <string name="toptrack_search">No Top Track found.</string>
     <string name="toptrack_search_network">Errot with the network, try again.</string>
     <string name="duration">0:00</string>

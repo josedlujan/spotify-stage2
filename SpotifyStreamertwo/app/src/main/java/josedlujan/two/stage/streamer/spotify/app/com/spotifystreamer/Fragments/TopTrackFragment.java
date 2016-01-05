@@ -138,9 +138,9 @@ public class TopTrackFragment extends Fragment implements MediaPlayerFragment.Ca
         }
         protected  void onPostExecute(List<Track> trackList){
             super.onPostExecute(trackList);
-            if(trackList == null){
+            if(trackList == null )
                 Toast.makeText(getActivity().getApplicationContext(), R.string.toptrack_search_network, Toast.LENGTH_SHORT).show();
-            }
+
 
             if(trackList.size() == 0)
                 Toast.makeText(getActivity().getApplicationContext(),R.string.toptrack_search,Toast.LENGTH_SHORT).show();
@@ -154,6 +154,8 @@ public class TopTrackFragment extends Fragment implements MediaPlayerFragment.Ca
 
         }
         public void fillTopTracks(){
+
+
 
             //TopTrackSearch topTrackSearch = new TopTrackSearch(getActivity().getApplicationContext());
             topTrackSearch = new TopTrackSearch(getActivity().getApplicationContext());

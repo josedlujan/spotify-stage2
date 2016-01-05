@@ -162,15 +162,17 @@ public class SearchFragment extends Fragment {
         protected void onPostExecute(List<Artist> artists) {
             super.onPostExecute(artists);
 
-            if(artists == null)
-                Toast.makeText(getActivity().getApplicationContext(),R.string.artist_search_network, Toast.LENGTH_SHORT).show();
+            //if(artists == null)
+              //  Toast.makeText(getActivity().getApplicationContext(),R.string.artist_search_network, Toast.LENGTH_SHORT).show();
 
-            if((artists.size() == 0) && (editText.getText().length()>0))
-                Toast.makeText(getActivity().getApplicationContext(),R.string.artist_search,Toast.LENGTH_SHORT).show();
+            if(artists == null || ((artists.size() == 0) && (editText.getText().length()>0))) {
+                Toast.makeText(getActivity().getApplicationContext(),  R.string.artist_search, Toast.LENGTH_SHORT).show();
+            }else{
+                myArtists = artists;
+                fillListView();
+            }
 
 
-            myArtists = artists;
-            fillListView();
         }
     }
 
